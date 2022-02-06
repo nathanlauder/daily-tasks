@@ -12,6 +12,11 @@
     },
     "rules": {
       "eol-last": ["error", "never"],
-      "import/prefer-default-export": "warn"
+      "import/prefer-default-export": "warn",
+      "import/extensions": "off",
+      "camelcase": "off",
+      "comma-dangle": "off",
+      "no-global-assign": "warn",
+      "no-console": "off"
     }
 }
