@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/nathanlauder/daily-tasks/issues"
   },
-  "homepage": "https://github.com/nathanlauder/daily-tasks#readme"
+  "homepage": "https://github.com/nathanlauder/daily-tasks#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
 }
