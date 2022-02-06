@@ -1,0 +1,26 @@
+{
+  "name": "daily-tasks",
+  "version": "1.0.0",
+  "description": "a script to get daily tasks and info",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest test --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanlauder/daily-tasks.git"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "script",
+    "task",
+    "api"
+  ],
+  "author": "Nathan Lauder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathanlauder/daily-tasks/issues"
+  },
+  "homepage": "https://github.com/nathanlauder/daily-tasks#readme"
+}
