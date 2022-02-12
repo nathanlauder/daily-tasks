@@ -1,9 +1,10 @@
 import axios from 'axios';
 import { colors } from '../colors.js';
 import { cryptoConversions } from '../config/cryptoConversions.js';
+import { readTempValues } from '../manageTempFiles.js';
 
 const {
-  blue, green, error
+  white, blue, green, error
 } = colors;
 
 const call = () => {
@@ -16,12 +17,13 @@ const call = () => {
 };
 
 const crypto = () => {
-  let totalPortfolio = 0.0;
+  let totalPortfolio = 0;
+  console.log(readTempValues());
   call()
     .then(({ data }) => {
       Object.keys(data).forEach((token) => {
         totalPortfolio += cryptoConversions[token] * data[token].USD;
-        console.log(`${blue(token)}: ${(cryptoConversions[token] * data[token].USD).toFixed(2)}`);
+        console.log(`${blue(token)}: ${white((cryptoConversions[token] * data[token].USD).toFixed(2))}`);
       });
       console.log(`Total: ${green(totalPortfolio.toFixed(2))}`);
     })
